@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nexus AI Portal</title>
+    
+    <!-- Added Bootstrap Icons for a modern AI feel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/NexusPropertyPortal.styles.css" asp-append-version="true" />
+    
+    <style>
+            /* Modern Dark Navbar for AI Theme */
+            .navbar-custom {
+                background-color: #0b132b; /* Deep Space Blue */
+                border-bottom: 2px solid #3a506b;
+            }
+            .navbar-brand, .nav-link {
+                color: #ffffff !important;
+                font-weight: 500;
+            }
+            .nav-link:hover {
+                color: #6fffe9 !important; /* Cyber Aqua hover effect */
+            }
+            footer {
+                background-color: #f8f9fa;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Changed to navbar-dark and added custom class -->
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark navbar-custom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-cpu"></i> NEXUS AI
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Property" asp-action="Index">
+                                <i class="bi bi-building"></i> Property Portal
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <span class="nav-link text-info"><i class="bi bi-robot"></i> AI Engine Active</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center">
+            &copy; 2026 - Nexus Sync Solutions - Built by NNS
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

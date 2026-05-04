@@ -1,0 +1,21 @@
+﻿@model NexusPropertyPortal.Models.Property
+@inject NexusPropertyPortal.Services.PricePredictionService PredictionService
+
+<h2>Analysis for @Model.Suburb</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Property Breakdown</h5>
+        <p><strong>Asking Price:</strong> @Model.Price.ToString("C")</p>
+        <p>
+            <strong>AI Estimated Value:</strong>
+            <span class="text-success">
+                @PredictionService.PredictPrice(Model.Bedrooms, Model.Bathrooms, Model.SquareMeters, Model.GarageCount).ToString("C")
+            </span>
+        </p>
+        <hr />
+        <p><strong>Suburb Market Average:</strong> @ViewBag.AveragePrice.ToString("C")</p>
+    </div>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Inventory</a>

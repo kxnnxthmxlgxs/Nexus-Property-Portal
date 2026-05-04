@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Nexus AI Dashboard";
+}
+
+<div class="container py-5">
+    <!-- Main Hero Section -->
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-7">
+            <h1 class="display-4 fw-bold text-dark mb-3">Nexus Property Analytics</h1>
+            <p class="lead text-muted">
+                Welcome to the Nexus Sync Solutions Property Portal.
+                This platform integrates SQL Server data persistence with
+                Machine Learning models to provide real-time market valuations.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                <a asp-controller="Property" asp-action="Index" class="btn btn-primary btn-lg px-4 me-md-2 shadow-sm">
+                    View Inventory 
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-5 text-center">
+            <!-- Modern placeholder icon representing AI -->
+            <i class="bi bi-graph-up-arrow text-primary" style="font-size: 8rem; opacity: 0.1; position: absolute;"></i>
+            <div class="p-5 bg-white shadow-sm rounded-4 border border-light">
+                <h6 class="text-uppercase text-primary fw-bold small">System Status</h6>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>Database Connection:</span>
+                    <span class="text-success fw-bold">Active</span>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>ML Model Version:</span>
+                    <span class="text-info">v1.0 (Linear)</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <span>Environment:</span>
+                    <span class="text-secondary">.NET 10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimalist Info Tiles -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="p-4 border-start border-primary border-4 bg-white shadow-sm h-100">
+                <h5 class="fw-bold"><i class="bi bi-hdd-network me-2"></i>Data Tier</h5>
+                <p class="small text-muted mb-0">Powered by SQL Server for robust, persistent storage of property metrics.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 border-start border-success border-4 bg-white shadow-sm h-100">
+                <h5 class="fw-bold"><i class="bi bi-lightning-charge me-2"></i>AI Inference</h5>
+                <p class="small text-muted mb-0">Real-time price prediction using multi-variable regression analysis.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 border-start border-info border-4 bg-white shadow-sm h-100">
+                <h5 class="fw-bold"><i class="bi bi-layers me-2"></i>Full Stack</h5>
+                <p class="small text-muted mb-0">Built using C#, ASP.NET MVC, and optimized for high-speed local development.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,22 +12,23 @@ The **Nexus Property Portal** is a production-ready .NET 10 web application that
 ### **1. AI-Driven Market Valuation**
 The system features a custom `PricePredictionService` that calculates a property's estimated market value based on its physical attributes. The application provides immediate visual feedback through "Good Value" badges when a property is priced below the AI estimate.
 
-![Property Inventory and AI Estimates](images/inventory.png)
+<img width="1343" height="638" alt="Inventory" src="https://github.com/user-attachments/assets/5e81a687-f134-4b11-93a2-369e2816478d" />
 *Figure 2: The Property Inventory dashboard showing total portfolio value and AI-calculated market estimates.*
 
 ### **2. Deep Dive Analytics**
 Users can view a detailed breakdown of how a property compares to the average market price in its specific suburb.
 
-![Property Analysis View](images/analysis.png)
+<img width="1345" height="635" alt="Property details " src="https://github.com/user-attachments/assets/91c73e1a-bc7d-4188-87c1-f6093a8def4a" />
 *Figure 3: Detailed suburb-level market analysis for specific listings.*
 
 ### **3. Comprehensive Property Management (CRUD)**
 A secure, streamlined interface for managing the property lifecycle, from registration to data cleanup.
 
-![Registration and Editing](images/registration_edit.png)
+<img width="1345" height="632" alt="Register new property" src="https://github.com/user-attachments/assets/ac60526c-636c-4038-b838-c38975e76fec" />
 *Figure 4: Secure forms for registering new properties and modifying existing records with data validation.*
 
-![Deletion Confirmation](images/delete.png)
+<img width="1341" height="636" alt="Delete property" src="https://github.com/user-attachments/assets/6c815fb0-d831-4c3b-8d9d-3382346827a5" />
+<img width="1341" height="632" alt="Edit property " src="https://github.com/user-attachments/assets/565dc1e9-08f7-47ae-948c-f3ec1e21c18f" />
 *Figure 5: Safety-first deletion workflow to protect the integrity of the AI training dataset.*
 
 ## 🛠️ Technical Stack
@@ -52,18 +53,19 @@ A secure, streamlined interface for managing the property lifecycle, from regist
 ## 📸 Project Gallery
 
 ### **Main Dashboard**
-![Home Page](OPM401Project/images/HomePage.png)
+<img width="1347" height="637" alt="HomePage" src="https://github.com/user-attachments/assets/a9a044b6-f606-4f1b-9692-0dfd76146ff5" />
 
 ### **Property Inventory & AI Analytics**
-![Inventory](OPM401Project/images/Inventory.png)
+<img width="1343" height="638" alt="Inventory" src="https://github.com/user-attachments/assets/24e7631b-392f-4b7d-8155-452569790ab1" />
 
 ### **Search & Filtering**
-![Inventory with Filter](images/Inventory with Filter.png)
+<img width="1340" height="630" alt="Inventory with Filter" src="https://github.com/user-attachments/assets/ee81d1a7-4334-4d74-82fb-90ea86b4f1e7" />
 
 ### **Detailed Analysis**
-![Property Details](images/Property details .png)
+<img width="1345" height="635" alt="Property details " src="https://github.com/user-attachments/assets/91c73e1a-bc7d-4188-87c1-f6093a8def4a" />
 
 ### **Property Management (CRUD)**
-![Register New](images/Register new property.png)
-![Edit Property](images/Edit property .png)
-![Delete Property](images/Delete property.png)
+<img width="1345" height="632" alt="Register new property" src="https://github.com/user-attachments/assets/ac60526c-636c-4038-b838-c38975e76fec" />
+<img width="1341" height="632" alt="Edit property " src="https://github.com/user-attachments/assets/565dc1e9-08f7-47ae-948c-f3ec1e21c18f" />
+<img width="1341" height="636" alt="Delete property" src="https://github.com/user-attachments/assets/6c815fb0-d831-4c3b-8d9d-3382346827a5" />
+

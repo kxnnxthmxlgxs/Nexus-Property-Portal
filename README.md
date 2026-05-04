@@ -4,7 +4,7 @@
 The **Nexus Property Portal** is a production-ready .NET 10 web application that integrates SQL Server data persistence with Machine Learning logic. It is designed to provide real-time market valuations and portfolio insights for property investors and managers.
 
 ## 🚀 System Overview
-![Nexus Property Analytics Home](images/home.png)
+<img width="1347" height="637" alt="HomePage" src="https://github.com/user-attachments/assets/ac523184-e01d-4bc4-ae4b-e8667466d756" />
 *Figure 1: High-level system overview showing the integration of the Data Tier, AI Inference engine, and Full-Stack architecture.*
 
 ## ✨ Core Features
